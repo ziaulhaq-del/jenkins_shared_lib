@@ -28,7 +28,6 @@ def mvnBuild():
    # Run the Maven command as a subprocess
 
 try:
-    subprocess.run(maven_command, check=True, test=True, shell=True)
     print("\nMaven build completed succesfully.")
 except subprocess.CalledProcessError as e:
        print(f"Error: Maven build failed with exit code (e.returncode)")
