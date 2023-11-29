@@ -4,10 +4,11 @@ import requests
 import subprocess
 
 def jfrogUpload():
-    url = "http://65.0.179.169:8082/artifactory/example-repo-local/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar"
+    #Define the URL, file path, and authentication credentials
+    url = "http://18.210.20.14:8082/artifactory/example-repo-local/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar"
     file_path = "/var/lib/jenkins/workspace/NewPipeline/target/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar"
     username = 'admin'
-    password = 'zia123'
+    password = 'Zia@2023'
 
         #   send the PUT request with authentication and file upload
     with open(file_path,'rb') as file:
